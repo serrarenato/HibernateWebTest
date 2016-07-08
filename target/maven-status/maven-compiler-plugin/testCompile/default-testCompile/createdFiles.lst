@@ -1,0 +1,4 @@
+br\com\letsgoti\configuration\HibernateTestConfiguration.class
+br\com\letsgoti\dao\TestCustomer.class
+br\com\letsgoti\dao\EntityDaoImplTest.class
+teste.class

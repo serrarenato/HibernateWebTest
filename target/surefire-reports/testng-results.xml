@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1885" started-at="2016-07-06T13:41:53Z" finished-at="2016-07-06T13:41:55Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1885" started-at="2016-07-06T13:41:53Z" finished-at="2016-07-06T13:41:55Z">
+      <class name="br.com.letsgoti.dao.TestCustomer">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2016-07-06T10:41:53Z" finished-at="2016-07-06T10:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1635" started-at="2016-07-06T10:41:53Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-07-06T10:41:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="53" started-at="2016-07-06T10:41:54Z" finished-at="2016-07-06T10:41:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void br.com.letsgoti.dao.TestCustomer.findAllEmployees()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="setUp" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:54Z" finished-at="2016-07-06T10:41:54Z">
+          <exception class="org.dbunit.dataset.NoSuchTableException">
+            <message>
+              <![CDATA[customer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.dbunit.dataset.NoSuchTableException: customer
+	at org.dbunit.database.DatabaseDataSet.getTableMetaData(DatabaseDataSet.java:192)
+	at org.dbunit.operation.DeleteAllOperation.execute(DeleteAllOperation.java:98)
+	at org.dbunit.operation.CompositeOperation.execute(CompositeOperation.java:67)
+	at br.com.letsgoti.dao.EntityDaoImplTest.setUp(EntityDaoImplTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:601)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.dbunit.dataset.NoSuchTableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="findAllEmployees()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="findAllEmployees" duration-ms="1" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllEmployees -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="8" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void br.com.letsgoti.dao.TestCustomer.findAllEmployees()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="setUp" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="findById()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="findById" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void br.com.letsgoti.dao.TestCustomer.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="setUp" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="saveCustomer()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="saveCustomer" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveCustomer -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void br.com.letsgoti.dao.TestCustomer.saveCustomer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:br.com.letsgoti.dao.TestCustomer@4d95d2a2]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-07-06T10:41:55Z" finished-at="2016-07-06T10:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- br.com.letsgoti.dao.TestCustomer -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

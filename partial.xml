@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <customer id="1" firstName="asd" lastName="asdasd" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <customer id="2" firstName="cliente 2" lastName="222" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <customer id="3" firstName="cliente 3" lastName="3333" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <customer id="4" firstName="cliente 3" lastName="3333" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <customer id="5" firstName="cliente 3" lastName="3333" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <customer id="6" firstName="cliente 3" lastName="3333" sex="M" dateBorn="1981-02-17 00:00:00.0" email="ass@asdjl.com"/>
+  <address id="1" addressline1="Rua Rio grande do sul" city="Campinas" state="SP" addressline2="700"/>
+  <address id="2" addressline1="Rua ABC" city="Campinas" state="SP" addressline2="696"/>
+</dataset>
